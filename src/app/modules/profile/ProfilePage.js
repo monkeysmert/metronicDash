@@ -1,6 +1,6 @@
 import { Navigate, Routes, Route, Outlet } from "react-router-dom"
 import { PageTitle } from "../../../_metronic/layout/core"
-import { Overview } from "./components/Overview"
+import { Customers } from "./components/Customers"
 import { Projects } from "./components/Projects"
 import { Campaigns } from "./components/Campaigns"
 import { Documents } from "./components/Documents"
@@ -10,7 +10,7 @@ import { ProfileHeader } from "./ProfileHeader"
 const profileBreadCrumbs = [
   {
     title: "Profile",
-    path: "/crafted/pages/profile/overview",
+    path: "/crafted/pages/customers",
     isSeparator: false,
     isActive: false
   },
@@ -33,42 +33,42 @@ const ProfilePage = () => (
       }
     >
       <Route
-        path="overview"
+        path="customers"
         element={
           <>
-            <PageTitle breadcrumbs={profileBreadCrumbs}>Overview</PageTitle>
-            <Overview />
+            <PageTitle breadcrumbs={profileBreadCrumbs}>Customers</PageTitle>
+            <Customers />
           </>
         }
       />
       <Route
-        path="projects"
+        path="marketers"
         element={
           <>
-            <PageTitle breadcrumbs={profileBreadCrumbs}>Projects</PageTitle>
+            <PageTitle breadcrumbs={profileBreadCrumbs}>Marketers</PageTitle>
             <Projects />
           </>
         }
       />
       <Route
-        path="campaigns"
+        path="nurses"
         element={
           <>
-            <PageTitle breadcrumbs={profileBreadCrumbs}>Campaigns</PageTitle>
+            <PageTitle breadcrumbs={profileBreadCrumbs}>Nurses</PageTitle>
             <Campaigns />
           </>
         }
       />
       <Route
-        path="documents"
+        path="drivers"
         element={
           <>
-            <PageTitle breadcrumbs={profileBreadCrumbs}>Documents</PageTitle>
+            <PageTitle breadcrumbs={profileBreadCrumbs}>Drivers</PageTitle>
             <Documents />
           </>
         }
       />
-      <Route
+      {/* <Route
         path="connections"
         element={
           <>
@@ -76,7 +76,7 @@ const ProfilePage = () => (
             <Connections />
           </>
         }
-      />
+      /> */}
       <Route
         index
         element={<Navigate to="/crafted/pages/profile/overview" />}

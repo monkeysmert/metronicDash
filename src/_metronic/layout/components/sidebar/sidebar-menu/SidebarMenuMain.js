@@ -16,12 +16,12 @@ const SidebarMenuMain = () => {
         title={intl.formatMessage({ id: "MENU.DASHBOARD" })}
         fontIcon="bi-app-indicator"
       />
-      <SidebarMenuItem
+      {/* <SidebarMenuItem
         to="/builder"
         icon="switch"
         title="Layout Builder"
         fontIcon="bi-layers"
-      />
+      /> */}
       <div className="menu-item">
         <div className="menu-content pt-8 pb-2">
           <span className="menu-section text-muted text-uppercase fs-8 ls-1">
@@ -35,39 +35,39 @@ const SidebarMenuMain = () => {
         fontIcon="bi-archive"
         icon="element-plus"
       >
-        <SidebarMenuItemWithSub
+        {/* <SidebarMenuItemWithSub
           to="/crafted/pages/profile"
           title="Profile"
           hasBullet={true}
-        >
+        > */}
           <SidebarMenuItem
-            to="/crafted/pages/profile/overview"
-            title="Overview"
+            to="/crafted/pages/customers"
+            title="Customers"
             hasBullet={true}
           />
           <SidebarMenuItem
-            to="/crafted/pages/profile/projects"
-            title="Projects"
+            to="/crafted/pages/marketers"
+            title="Marketers"
             hasBullet={true}
           />
           <SidebarMenuItem
-            to="/crafted/pages/profile/campaigns"
-            title="Campaigns"
+            to="/crafted/pages/nurses"
+            title="Nurses"
             hasBullet={true}
           />
           <SidebarMenuItem
-            to="/crafted/pages/profile/documents"
-            title="Documents"
+            to="/crafted/pages/drivers"
+            title="Drivers"
             hasBullet={true}
           />
-          <SidebarMenuItem
+          {/* <SidebarMenuItem
             to="/crafted/pages/profile/connections"
             title="Connections"
             hasBullet={true}
-          />
-        </SidebarMenuItemWithSub>
+          /> */}
+        {/* </SidebarMenuItemWithSub> */}
 
-        <SidebarMenuItemWithSub
+        {/* <SidebarMenuItemWithSub
           to="/crafted/pages/wizards"
           title="Wizards"
           hasBullet={true}
@@ -82,7 +82,7 @@ const SidebarMenuMain = () => {
             title="Vertical"
             hasBullet={true}
           />
-        </SidebarMenuItemWithSub>
+        </SidebarMenuItemWithSub> */}
       </SidebarMenuItemWithSub>
       <SidebarMenuItemWithSub
         to="/crafted/accounts"
@@ -101,7 +101,7 @@ const SidebarMenuMain = () => {
           hasBullet={true}
         />
       </SidebarMenuItemWithSub>
-      <SidebarMenuItemWithSub
+      {/* <SidebarMenuItemWithSub
         to="/error"
         title="Errors"
         fontIcon="bi-sticky"
@@ -109,8 +109,8 @@ const SidebarMenuMain = () => {
       >
         <SidebarMenuItem to="/error/404" title="Error 404" hasBullet={true} />
         <SidebarMenuItem to="/error/500" title="Error 500" hasBullet={true} />
-      </SidebarMenuItemWithSub>
-      <SidebarMenuItemWithSub
+      </SidebarMenuItemWithSub> */}
+      {/* <SidebarMenuItemWithSub
         to="/crafted/widgets"
         title="Widgets"
         icon="element-7"
@@ -146,7 +146,7 @@ const SidebarMenuMain = () => {
           title="Feeds"
           hasBullet={true}
         />
-      </SidebarMenuItemWithSub>
+      </SidebarMenuItemWithSub> */}
       <div className="menu-item">
         <div className="menu-content pt-8 pb-2">
           <span className="menu-section text-muted text-uppercase fs-8 ls-1">
@@ -154,7 +154,7 @@ const SidebarMenuMain = () => {
           </span>
         </div>
       </div>
-      <SidebarMenuItemWithSub
+      {/* <SidebarMenuItemWithSub
         to="/apps/chat"
         title="Chat"
         fontIcon="bi-chat-left"
@@ -175,14 +175,14 @@ const SidebarMenuMain = () => {
           title="Drawer Chart"
           hasBullet={true}
         />
-      </SidebarMenuItemWithSub>
+      </SidebarMenuItemWithSub> */}
       <SidebarMenuItem
         to="/apps/user-management/users"
         icon="abstract-28"
         title="User management"
         fontIcon="bi-layers"
       />
-      <div className="menu-item">
+      {/* <div className="menu-item">
         <a
           target="_blank"
           className="menu-link"
@@ -195,7 +195,7 @@ const SidebarMenuMain = () => {
             Changelog {process.env.REACT_APP_VERSION}
           </span>
         </a>
-      </div>
+      </div> */}
     </>
   )
 }

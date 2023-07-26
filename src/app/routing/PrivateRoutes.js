@@ -24,33 +24,33 @@ const PrivateRoutes = () => {
         <Route path="auth/*" element={<Navigate to="/dashboard" />} />
         {/* Pages */}
         <Route path="dashboard" element={<DashboardWrapper />} />
-        <Route path="builder" element={<BuilderPageWrapper />} />
-        <Route path="menu-test" element={<MenuTestPage />} />
+        {/* <Route path="builder" element={<BuilderPageWrapper />} />
+        <Route path="menu-test" element={<MenuTestPage />} /> */}
         {/* Lazy Modules */}
         <Route
-          path="crafted/pages/profile/*"
+          path="crafted/pages/*"
           element={
             <SuspensedView>
               <ProfilePage />
             </SuspensedView>
           }
         />
-        <Route
+        {/* <Route
           path="crafted/pages/wizards/*"
           element={
             <SuspensedView>
               <WizardsPage />
             </SuspensedView>
           }
-        />
-        <Route
+        /> */}
+        {/* <Route
           path="crafted/widgets/*"
           element={
             <SuspensedView>
               <WidgetsPage />
             </SuspensedView>
           }
-        />
+        /> */}
         <Route
           path="crafted/account/*"
           element={
@@ -59,14 +59,14 @@ const PrivateRoutes = () => {
             </SuspensedView>
           }
         />
-        <Route
+        {/* <Route
           path="apps/chat/*"
           element={
             <SuspensedView>
               <ChatPage />
             </SuspensedView>
           }
-        />
+        /> */}
         <Route
           path="apps/user-management/*"
           element={

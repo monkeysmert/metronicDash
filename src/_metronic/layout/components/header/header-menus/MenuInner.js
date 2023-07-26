@@ -11,7 +11,7 @@ export function MenuInner() {
         title={intl.formatMessage({ id: "MENU.DASHBOARD" })}
         to="/dashboard"
       />
-      <MenuItem title="Layout Builder" to="/builder" />
+      {/* <MenuItem title="Layout Builder" to="/builder" /> */}
       <MenuInnerWithSub
         title="Crafted"
         to="/crafted"
@@ -27,41 +27,36 @@ export function MenuInner() {
           menuPlacement="right-start"
           menuTrigger={`{default:'click', lg: 'hover'}`}
         >
-          <MenuInnerWithSub
+          {/* <MenuInnerWithSub
             title="Profile"
             to="/crafted/pages/profile"
             hasArrow={true}
             hasBullet={true}
             menuPlacement="right-start"
             menuTrigger={`{default:'click', lg: 'hover'}`}
-          >
+          > */}
             <MenuItem
-              to="/crafted/pages/profile/overview"
-              title="Overview"
+              to="/crafted/pages/customers"
+              title="Customers"
               hasBullet={true}
             />
             <MenuItem
-              to="/crafted/pages/profile/projects"
-              title="Projects"
+              to="/crafted/pages/marketers"
+              title="Marketers"
               hasBullet={true}
             />
             <MenuItem
-              to="/crafted/pages/profile/campaigns"
-              title="Campaigns"
+              to="/crafted/pages/nurses"
+              title="Nurses"
               hasBullet={true}
             />
             <MenuItem
-              to="/crafted/pages/profile/documents"
-              title="Documents"
+              to="/crafted/pages/drivers"
+              title="Drivers"
               hasBullet={true}
             />
-            <MenuItem
-              to="/crafted/pages/profile/connections"
-              title="Connections"
-              hasBullet={true}
-            />
-          </MenuInnerWithSub>
-          <MenuInnerWithSub
+          {/* </MenuInnerWithSub> */}
+          {/* <MenuInnerWithSub
             title="Wizards"
             to="/crafted/pages/wizards"
             hasArrow={true}
@@ -79,7 +74,7 @@ export function MenuInner() {
               title="Vertical"
               hasBullet={true}
             />
-          </MenuInnerWithSub>
+          </MenuInnerWithSub> */}
         </MenuInnerWithSub>
 
         {/* ACCOUNT */}
@@ -104,7 +99,7 @@ export function MenuInner() {
         </MenuInnerWithSub>
 
         {/* ERRORS */}
-        <MenuInnerWithSub
+        {/* <MenuInnerWithSub
           title="Errors"
           to="/error"
           fontIcon="bi-sticky"
@@ -114,10 +109,10 @@ export function MenuInner() {
         >
           <MenuItem to="/error/404" title="Error 404" hasBullet={true} />
           <MenuItem to="/error/500" title="Error 500" hasBullet={true} />
-        </MenuInnerWithSub>
+        </MenuInnerWithSub> */}
 
         {/* Widgets */}
-        <MenuInnerWithSub
+        {/* <MenuInnerWithSub
           title="Widgets"
           to="/crafted/widgets"
           fontIcon="bi-layers"
@@ -155,17 +150,17 @@ export function MenuInner() {
             title="Feeds"
             hasBullet={true}
           />
-        </MenuInnerWithSub>
+        </MenuInnerWithSub> */}
       </MenuInnerWithSub>
 
-      <MenuInnerWithSub
+      {/* <MenuInnerWithSub
         title="Apps"
         to="/apps"
         menuPlacement="bottom-start"
         menuTrigger="click"
-      >
+      > */}
         {/* PAGES */}
-        <MenuInnerWithSub
+        {/* <MenuInnerWithSub
           title="Chat"
           to="/apps/chat"
           icon="message-text-2"
@@ -194,9 +189,9 @@ export function MenuInner() {
           to="/apps/user-management/users"
           title="User management"
         />
-      </MenuInnerWithSub>
+      </MenuInnerWithSub> */}
 
-      <MenuInnerWithSub
+      {/* <MenuInnerWithSub
         isMega={true}
         title="Mega menu"
         to="/mega-menu"
@@ -204,7 +199,7 @@ export function MenuInner() {
         menuTrigger="click"
       >
         <MegaMenu />
-      </MenuInnerWithSub>
+      </MenuInnerWithSub> */}
     </>
   )
 }
