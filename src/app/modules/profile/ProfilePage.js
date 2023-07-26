@@ -1,16 +1,16 @@
 import { Navigate, Routes, Route, Outlet } from "react-router-dom"
 import { PageTitle } from "../../../_metronic/layout/core"
 import { Customers } from "./components/Customers"
-import { Projects } from "./components/Projects"
-import { Campaigns } from "./components/Campaigns"
-import { Documents } from "./components/Documents"
+import { Marketers } from "./components/Marketers"
+import { Nurses } from "./components/Nurses"
+import { Drivers } from "./components/Drivers"
 import { Connections } from "./components/Connections"
 import { ProfileHeader } from "./ProfileHeader"
 
 const profileBreadCrumbs = [
   {
-    title: "Profile",
-    path: "/crafted/pages/customers",
+    title: "Dashboard",
+    path: "/dashboard",
     isSeparator: false,
     isActive: false
   },
@@ -46,7 +46,7 @@ const ProfilePage = () => (
         element={
           <>
             <PageTitle breadcrumbs={profileBreadCrumbs}>Marketers</PageTitle>
-            <Projects />
+            <Marketers />
           </>
         }
       />
@@ -55,7 +55,7 @@ const ProfilePage = () => (
         element={
           <>
             <PageTitle breadcrumbs={profileBreadCrumbs}>Nurses</PageTitle>
-            <Campaigns />
+            <Nurses />
           </>
         }
       />
@@ -64,7 +64,7 @@ const ProfilePage = () => (
         element={
           <>
             <PageTitle breadcrumbs={profileBreadCrumbs}>Drivers</PageTitle>
-            <Documents />
+            <Drivers />
           </>
         }
       />

@@ -1,11 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react"
 import { Card2 } from "../../../../_metronic/partials/content/cards/Card2"
+import {UsersListWrapper} from '../../apps/user-management/users-list/UsersList'
 
-export function Projects() {
+
+export function Marketers() {
   return (
     <>
-      <div className="d-flex flex-wrap flex-stack mb-6">
+      {/* <div className="d-flex flex-wrap flex-stack mb-6">
         <h3 className="fw-bolder my-2">
           My Projects
           <span className="fs-6 text-gray-400 fw-bold ms-1">Active</span>
@@ -228,57 +230,58 @@ export function Projects() {
             </a>
           </li>
         </ul>
-      </div>
+      </div> */}
+      <UsersListWrapper />
     </>
   )
 }
 
-const users1 = [
-  { name: "Emma Smith", avatar: "/media/avatars/300-6.jpg" },
-  { name: "Rudy Stone", avatar: "/media/avatars/300-1.jpg" },
-  { name: "Susan Redwood", initials: "S", color: "primary" }
-]
+// const users1 = [
+//   { name: "Emma Smith", avatar: "/media/avatars/300-6.jpg" },
+//   { name: "Rudy Stone", avatar: "/media/avatars/300-1.jpg" },
+//   { name: "Susan Redwood", initials: "S", color: "primary" }
+// ]
 
-const users2 = [
-  { name: "Alan Warden", initials: "A", color: "warning" },
-  { name: "Brian Cox", avatar: "/media/avatars/300-5.jpg" }
-]
+// const users2 = [
+//   { name: "Alan Warden", initials: "A", color: "warning" },
+//   { name: "Brian Cox", avatar: "/media/avatars/300-5.jpg" }
+// ]
 
-const users3 = [
-  { name: "Mad Masy", avatar: "/media/avatars/300-6.jpg" },
-  { name: "Cris Willson", avatar: "/media/avatars/300-1.jpg" },
-  { name: "Mike Garcie", initials: "M", color: "info" }
-]
+// const users3 = [
+//   { name: "Mad Masy", avatar: "/media/avatars/300-6.jpg" },
+//   { name: "Cris Willson", avatar: "/media/avatars/300-1.jpg" },
+//   { name: "Mike Garcie", initials: "M", color: "info" }
+// ]
 
-const users4 = [
-  { name: "Nich Warden", initials: "N", color: "warning" },
-  { name: "Rob Otto", initials: "R", color: "success" }
-]
+// const users4 = [
+//   { name: "Nich Warden", initials: "N", color: "warning" },
+//   { name: "Rob Otto", initials: "R", color: "success" }
+// ]
 
-const users5 = [
-  { name: "Francis Mitcham", avatar: "/media/avatars/300-20.jpg" },
-  { name: "Michelle Swanston", avatar: "/media/avatars/300-7.jpg" },
-  { name: "Susan Redwood", initials: "S", color: "primary" }
-]
+// const users5 = [
+//   { name: "Francis Mitcham", avatar: "/media/avatars/300-20.jpg" },
+//   { name: "Michelle Swanston", avatar: "/media/avatars/300-7.jpg" },
+//   { name: "Susan Redwood", initials: "S", color: "primary" }
+// ]
 
-const users6 = [
-  { name: "Emma Smith", avatar: "/media/avatars/300-6.jpg" },
-  { name: "Rudy Stone", avatar: "/media/avatars/300-1.jpg" },
-  { name: "Susan Redwood", initials: "S", color: "primary" }
-]
+// const users6 = [
+//   { name: "Emma Smith", avatar: "/media/avatars/300-6.jpg" },
+//   { name: "Rudy Stone", avatar: "/media/avatars/300-1.jpg" },
+//   { name: "Susan Redwood", initials: "S", color: "primary" }
+// ]
 
-const users7 = [
-  { name: "Meloday Macy", avatar: "/media/avatars/300-2.jpg" },
-  { name: "Rabbin Watterman", initials: "S", color: "success" }
-]
+// const users7 = [
+//   { name: "Meloday Macy", avatar: "/media/avatars/300-2.jpg" },
+//   { name: "Rabbin Watterman", initials: "S", color: "success" }
+// ]
 
-const users8 = [
-  { name: "Emma Smith", avatar: "/media/avatars/300-6.jpg" },
-  { name: "Rudy Stone", avatar: "/media/avatars/300-1.jpg" },
-  { name: "Susan Redwood", initials: "S", color: "primary" }
-]
+// const users8 = [
+//   { name: "Emma Smith", avatar: "/media/avatars/300-6.jpg" },
+//   { name: "Rudy Stone", avatar: "/media/avatars/300-1.jpg" },
+//   { name: "Susan Redwood", initials: "S", color: "primary" }
+// ]
 
-const users9 = [
-  { name: "Meloday Macy", avatar: "/media/avatars/300-2.jpg" },
-  { name: "Rabbin Watterman", initials: "S", color: "danger" }
-]
+// const users9 = [
+//   { name: "Meloday Macy", avatar: "/media/avatars/300-2.jpg" },
+//   { name: "Rabbin Watterman", initials: "S", color: "danger" }
+// ]

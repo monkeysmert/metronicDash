@@ -1,11 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react"
 import { Card5 } from "../../../../_metronic/partials/content/cards/Card5"
+import {UsersListWrapper} from '../../apps/user-management/users-list/UsersList'
 
-export function Campaigns() {
+
+export function Nurses() {
   return (
     <>
-      <div className="d-flex flex-wrap flex-stack mb-6">
+      {/* <div className="d-flex flex-wrap flex-stack mb-6">
         <h3 className="fw-bolder my-2">
           My Campaigns
           <span className="fs-6 text-gray-400 fw-bold ms-1">30 Days</span>
@@ -189,7 +191,8 @@ export function Campaigns() {
             </a>
           </li>
         </ul>
-      </div>
+      </div> */}
+      <UsersListWrapper />
     </>
   )
 }
